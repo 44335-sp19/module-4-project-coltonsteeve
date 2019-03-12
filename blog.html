@@ -36,7 +36,8 @@
    <script>
 			//Step 3: Set and id called "blogline" on the "aside" tag. 
 			//Change the text on the aside element to say "March Madness wrap now available!"
-
+			var asideID = document.getElementById("blogline");
+			asideID.innerHTML = "March Madness wrap now available!";
 			
 			
 					
@@ -46,10 +47,14 @@
 			
 			
 			//Step 4: Change the h3 tags to be italic
-			
-			
-			
-			
+			var h3Tags = document.querySelectorAll("h3");
+			if (h3Tags.length > 0) { 
+
+  			for (var i = 0; i < h3Tags.length; i++) {
+    			h3Tags[i].style.fontStyle = 'italic';  
+  }
+
+}
 			
 			
 			
